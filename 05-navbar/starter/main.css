@@ -334,11 +334,16 @@ nav {
 
 .links {
   margin: 0;
+  height: 0;
+  overflow: hidden;
   /* todo height overflow transition */
   /* get the height of the links list 120px*/
 }
 
-/* todo .show-links */
+.show-links {
+  height: 120px;
+}
+
 @media screen and (min-width: 800px) {
   .nav-toggle {
     display: none;
@@ -359,7 +364,7 @@ nav {
 
   .links {
     display: flex;
-    /* todo height */
+    height: auto;
   }
 
   .social-icons {
