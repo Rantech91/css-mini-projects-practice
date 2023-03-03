@@ -321,10 +321,13 @@ Sidebar
   row-gap: 1rem;
   box-shadow: var(--shadow-2);
   transition: var(--transition);
-  /* todo hide sidebar */
+  transform: translateX(-100%);
 }
 
-/* todo show sidebar */
+.show-sidebar {
+  transform: translateX(0)
+}
+
 @media screen and (min-width: 676px) {
   .sidebar {
     width: 400px;
